@@ -1,1 +1,1 @@
-# splashPageBrandon
+# Splash Page for WunderList 2.0
