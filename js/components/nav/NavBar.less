@@ -8,7 +8,7 @@ header{
     @media @tablet{
         height: 100px;
         .stdBorder(0);
-        background-color:lemonchiffon;
+        background-color:@AC;
     }
 
     nav{
@@ -22,7 +22,7 @@ header{
         .flex(column,center);
         align-items: center;
         .menuButton{
-            background-color:lemonchiffon;
+            background-color:@AC;
             cursor: pointer;
             margin:auto;
             padding:12.5px;
@@ -33,7 +33,7 @@ header{
             }
         }
         .navContainer{
-            background-color: lemonchiffon;
+            background-color: @AC;
             transition: transform .25s;
             z-index: 100;
             &.hide{
@@ -58,7 +58,12 @@ header{
                 .flex(row,space-around);
                 align-items: center;
             }
+
+            .current{
+                background-color: darken(@AC,35%);
+            }
         }
+
         @media @tablet{
             width: 100%;
             .flex(row,flex-end,nowrap,center);
